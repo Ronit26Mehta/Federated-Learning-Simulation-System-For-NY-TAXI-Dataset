@@ -4,7 +4,7 @@ import flwr as fl
 # Define strategy for Federated Averaging
 strategy = fl.server.strategy.FedAvg()
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     # Get the port from the environment variable, defaulting to 8080 if not set
     port = os.getenv("PORT", 8080)
     server_address = f"0.0.0.0:{port}"
